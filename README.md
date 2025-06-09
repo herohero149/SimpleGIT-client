@@ -59,17 +59,143 @@ simple-git/
 ├── README.md
 └── requirements.txt
 
-
 ---
 
-## 🔧 Installation
+## 🛠️ Setup Instructions
 
-### 1. Clone the repo
+### 1. Clone this repo:
 
 ```bash
 git clone https://github.com/ArchieTUX/SimpleGIT-client.git
-cd
+cd SimpleGIT-client
+```
 
-2. Set up virtual environment
+### 2. Set up a virtual environment:
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
+
+### 3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Usage Guide
+
+### 🧱 Initialize a new repo:
+
+```bash
+python cli/main.py init
+```
+
+### 📥 Clone a remote repo:
+
+```bash
+python cli/main.py clone https://github.com/example/repo.git 
+```
+
+### ➕ Stage files:
+
+```bash
+echo "Hello World" > hello.txt
+python cli/main.py add hello.txt
+```
+
+### 📦 Commit changes:
+
+```bash
+python cli/main.py commit -m "Initial commit"
+```
+
+### 🚀 Push to remote:
+
+```bash
+python cli/main.py push --remote origin --branch main
+```
+
+### 🔄 Pull from remote:
+
+```bash
+python cli/main.py pull --remote origin --branch main
+```
+
+---
+
+## 🧪 Run Tests
+
+Run all tests using `pytest`:
+
+```bash
+python -m pytest tests/
+```
+
+### ✅ Coverage:
+
+```bash
+coverage run -m pytest tests/
+coverage report -m
+```
+
+---
+
+## 🛠️ Dev Tools
+
+### ✨ Format code:
+
+```bash
+black git_core/ cli/ config/ auth/
+```
+
+### 🚨 Lint:
+
+```bash
+flake8 git_core/ cli/ config/ auth/
+```
+
+### 🧠 Type check:
+
+```bash
+mypy git_core/ cli/ config/ auth/
+```
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcomed like long-lost friends 🫱🏼‍🫲🏽
+
+1. Fork the repo
+2. Create a new branch
+3. Make your changes
+4. Submit a PR!
+
+---
+
+## 📄 License
+
+MIT Licensed. Check out `LICENSE` for details.
+
+---
+
+## 💬 Questions?
+
+Open an issue or hit me up via GitHub.
+Let’s build a better Git, one commit at a time.
+
+---
+
+## ⭐ Show Some Love
+
+If you dig it, star it ⭐
+If you break it, patch it 🩹
+If you improve it, PR it 🚀
+
+Git reimagined. Minimal. Powerful. Yours.
+
+👉 [SimpleGIT-client GitHub Repo](https://github.com/ArchieTUX/SimpleGIT-client)
+
