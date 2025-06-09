@@ -1,0 +1,11 @@
+# Run tests
+python -m pytest tests/
+
+# Format code
+black git_core/ cli/ config/ auth/
+
+# Check style
+flake8 git_core/ cli/ config/ auth/
+
+# Type check
+mypy git_core/ cli/ config/ auth/
