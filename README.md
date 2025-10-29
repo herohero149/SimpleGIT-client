@@ -66,7 +66,7 @@ simple-git/
 ### 1. Clone this repo:
 
 ```bash
-git clone https://github.com/ArchieTUX/SimpleGIT-client.git
+git clone https://github.com/adithyasrivatsa/SimpleGIT-client.git
 cd SimpleGIT-client
 ```
 
